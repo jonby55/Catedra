@@ -1,0 +1,31 @@
+{
+  "data_path": "llamadas.csv",
+  "out_dir": "resultados_exp1_A",
+  "id_col": "llamada_id",
+  "group_col": "cliente_id",
+  "text_col": "texto",
+  "label_col": "etiqueta",
+  "tabular_cols": [
+    "antiguedad_meses",
+    "factura_media",
+    "n_reclamaciones_12m"
+  ],
+  "seed": 42,
+  "test_size": 0.2,
+  "val_size": 0.1,
+  "idioma": "en",
+  "tfidf_C_grid": [
+    0.3,
+    1.0,
+    3.0,
+    10.0
+  ],
+  "transformer_name": "dccuchile/bert-base-spanish-wwm-cased",
+  "max_len": 128,
+  "epochs": 3,
+  "batch_size": 16,
+  "lr": 2e-05,
+  "embedder_name": "paraphrase-multilingual-MiniLM-L12-v2",
+  "n_bootstrap": 1000,
+  "latency_samples": 200
+}

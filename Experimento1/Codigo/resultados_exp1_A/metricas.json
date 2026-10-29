@@ -1,0 +1,60 @@
+{
+  "A": {
+    "umbral": 0.5226166751184814,
+    "precision": 0.9795918367346926,
+    "recall": 0.9999999999999987,
+    "f1": 0.9896907216494846,
+    "f1_macro": 0.9938817376014226,
+    "roc_auc": 0.9999167217680531,
+    "pr_auc": 0.9995291754594531,
+    "brier": 0.0029367044789946014,
+    "ece": 0.010313635160471983,
+    "tp": 768,
+    "fp": 16,
+    "fn": 0,
+    "tn": 4143,
+    "f1_ic95": [
+      0.9845546081906901,
+      0.9944410129709698
+    ],
+    "pr_auc_ic95": [
+      0.9989210120048416,
+      0.9999233818537484
+    ],
+    "lat_ms_p50": 1.5542500000265136,
+    "lat_ms_p95": 3.4495899999683357,
+    "lat_ms_media": 1.8565994999971736,
+    "train_s": 3.4972380000003795,
+    "n_params": 5431,
+    "size_mb": 0.18256,
+    "device": "cpu",
+    "modelo": "A",
+    "extra": {
+      "C_elegido": 10.0,
+      "top_palabras_riesgo": [
+        "termination",
+        "claim",
+        "use",
+        "withdrawal",
+        "cancellation",
+        "reclamation",
+        "complaint",
+        "against",
+        "lodge",
+        "file"
+      ],
+      "top_palabras_no_riesgo": [
+        "create",
+        "order",
+        "open",
+        "opening",
+        "creating",
+        "address",
+        "details",
+        "info",
+        "payment",
+        "modify"
+      ]
+    }
+  }
+}

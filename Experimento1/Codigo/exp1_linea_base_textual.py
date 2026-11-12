@@ -11,16 +11,6 @@ si merece la pena complicarse con modelos más caros.
     B) Transformer ajustado (fine-tuning) -> caro, entiende contexto
     C) Embeddings congelados + Boosting   -> punto medio (+ variante con datos de ficha)
 
-Formato del CSV de entrada (--data):
-    llamada_id  : identificador único de la llamada
-    cliente_id  : (recomendado) un mismo cliente puede tener varias llamadas
-    texto       : transcripción de la llamada
-    etiqueta    : 1 = enfadado / riesgo de baja, 0 = no
-    (opcionales) antiguedad_meses, factura_media, n_reclamaciones_12m ... (ficha del cliente)
-
-Uso rápido:
-    python exp1_linea_base_textual.py --demo --models A          # prueba sin datos reales
-    python exp1_linea_base_textual.py --data llamadas.csv --models A B C
 
 Dependencias:
     Siempre : numpy pandas scikit-learn
